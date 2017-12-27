@@ -1,0 +1,42 @@
+﻿@model CodeFirstMVC_6B.Models.StudentCourses
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StudentCourses</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseObj.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseObj.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentObj.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentObj.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssignedOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssignedOn)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

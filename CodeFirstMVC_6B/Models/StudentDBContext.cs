@@ -20,6 +20,12 @@ namespace CodeFirstMVC_6B.Models
         }
 
         public System.Data.Entity.DbSet<CodeFirstMVC_6B.Models.Student> Students { get; set; }
+
+        public System.Data.Entity.DbSet<CodeFirstMVC_6B.Models.Course> Courses { get; set; }
+
+        public System.Data.Entity.DbSet<CodeFirstMVC_6B.Models.StudentCourses> StudentCourses { get; set; }
+
+        public System.Data.Entity.DbSet<CodeFirstMVC_6B.Models.Instructor> Instructors { get; set; }
     
     }
 }
